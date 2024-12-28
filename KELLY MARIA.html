@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Modas - Loja de Roupas</title>
+    <style>
+        /* Definindo a imagem de fundo para toda a página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://sarahpenido.com.br/wp-content/uploads/2023/01/04-decoracao-de-loja-de-roupa-pequena-moderna-madame-zen.webp');
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Alinha a imagem no centro da tela */
+            background-attachment: fixed; /* A imagem fica fixa enquanto rola a página */
+            color: white;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        /* Logotipo */
+        header img {
+            max-width: 250px; /* Define um tamanho máximo para o logotipo */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(16, 36, 92);
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+        }
+
+        /* Catálogo de Produtos */
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .produto {
+            background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para destacar o produto */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .produto:hover {
+            transform: scale(1.05);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .descricao {
+            padding: 15px;
+        }
+
+        .descricao h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #81c784;
+        }
+
+        .descricao p {
+            font-size: 1.1em;
+            color: #cccccc;
+        }
+
+        .preco {
+            font-size: 1.3em;
+            color: #e60000;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Logotipo -->
+        <img src="https://i.imgur.com/mYz5ygo.png" alt="Logotipo Kelly Maria Boutique"> <!-- URL do Imgur -->
+        <h1>Kelly Modas</h1>
+        <p>Encontre as melhores roupas para o seu estilo!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Início</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Catálogo de Produtos -->
+    <section id="catalogo">
+        <h2 style="text-align: center; padding: 20px; color: #81c784;">Nosso Catálogo</h2>
+        <div class="catalogo">
+            <!-- Produto 1 -->
+            <div class="produto">
+                <a href="detalhes_produto1.html">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_928334-MLB74153993104_012024-F.webp" alt="Camisa Casual">
+                </a>
+                <div class="descricao">
+                    <h3>BODY KELLY MARIA</h3>
+                    <p>Camisa confortável para o dia a dia.</p>
+                    <div class="preco">R$ 89,99</div>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="produto">
+                <a href="detalhes_produto2.html">
+                    <img src="https://thumb.braavo.me/vivadress/600/126933875.webp" alt="Vestido Elegante">
+                </a>
+                <div class="descricao">
+                    <h3>Vestido Elegante</h3>
+                    <p>Vestido perfeito para eventos especiais.</p>
+                    <div class="preco">R$ 149,99</div>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto">
+                <a href="detalhes_produto3.html">
+                    <img src="https://m.media-amazon.com/images/I/71Ce7ZCWeOL._AC_SX425_.jpg" alt="Jaqueta de Couro">
+                </a>
+                <div class="descricao">
+                    <h3>Jaqueta de Couro</h3>
+                    <p>Jaqueta estilosa para os dias frios.</p>
+                    <div class="preco">R$ 249,99</div>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="produto">
+                <a href="detalhes_produto4.html">
+                    <img src="https://www.bubustore.com.br/dashboard/uploads/f7481c57-d819-41aa-b8ae-63a5cb0474e6/f7481c57-d819-41aa-b8ae-63a5cb0474e6.jpeg" alt="Sapato Social">
+                </a>
+                <div class="descricao">
+                    <h3>PAQUETE ESPECIAL</h3>
+                    <p>Sapato para eventos formais.</p>
+                    <div class="preco">R$ 199,99</div>
+                </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="produto">
+                <a href="detalhes_produto5.html">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1178088/blusa_la_grossa_gola_alta_tricot_inverno_feminino_loja_do_trico_51_1_ddf24eab90b6386a9167b20babb122b0.jpeg" alt="Blusa de Lã">
+                </a>
+                <div class="descricao">
+                    <h3>Blusa de Lã</h3>
+                    <p>Blusa macia e quente para o inverno.</p>
+                    <div class="preco">R$ 119,99</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Kelly Modas - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
